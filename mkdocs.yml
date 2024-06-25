@@ -1,0 +1,6 @@
+site_name: "Manual Delineation API Documentation"
+docs_dir: 'docs'
+nav:
+  - "Manual Delineation": 'README.md'
+theme:
+    name: 'readthedocs'
