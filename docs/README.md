@@ -73,6 +73,8 @@ curl --location 'https://api.digifarm.io/manual-delineation' \
 
 *   `version`: \[string\] API version number.
 
+*   `message`: \[string\] Message from delineation team. This field will visible if any message available otherwise it will remove from the response. 
+
 ```json
 
 {
@@ -164,6 +166,8 @@ When a task is completed, a POST request will be sent to the specified `callback
 *   `timestamp`: \[datetime\] Current date and time.
 
 *   `version`: \[string\] API version number.
+
+*   `message`: \[string\] Message from delineation team. This field will visible if any message available otherwise it will remove from the response. 
 
 successfully.
 
