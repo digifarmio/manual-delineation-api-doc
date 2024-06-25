@@ -73,8 +73,6 @@ curl --location 'https://api.digifarm.io/manual-delineation' \
 
 *   `version`: \[string\] API version number.
 
-*   `message`: \[string\] Message from delineation team. This field will visible if any message available otherwise it will remove from the response. 
-
 ```json
 
 {
@@ -125,6 +123,8 @@ curl --location 'https://api.digifarm.io/manual-delineation/831d92ff-bc9b-406d-9
 *   `timestamp`: \[datetime\] Current date and time.
 
 *   `version`: \[string\] API version number.
+
+*   `message`: \[string\] Message from delineation team. This field will visible if any message available otherwise it will remove from the response. 
 
 ```json
 
