@@ -4,7 +4,7 @@ The Manual Delineation API service allows users to create a manual delineation r
 
 ## Base URL
 
-The URL for the Manual Delineation API is [https://api.digifarm.io/manual-delineation](https://api.digifarm.io/manual-delineation)
+The URL for the Manual Delineation API is [https://api.digifarm.io/delineation-requests](https://api.digifarm.io/delineation-requests)
 
 ## Authentication
 
@@ -12,11 +12,11 @@ The Manual Delineation API uses client tokens for authentication. Include your c
 
 ## **Endpoints**
 
-### POST /manual-delineation
+### POST /delineation-requests
 
 This endpoint create manual delineation request for a specified bounding box.
 
-#### Request URL `https://api.digifarm.io/manual-delineation`
+#### Request URL `https://api.digifarm.io/delineation-requests`
 
 
 #### **Request Headers**
@@ -46,7 +46,7 @@ X-Client-Token: The client token for authorization
 #### **Example Request**
 
 ```
-curl --location 'https://api.digifarm.io/manual-delineation' \
+curl --location 'https://api.digifarm.io/delineation-requests' \
 --header 'X-Client-Token: ae4eb3dc-2479-42c1-b359-b7f0565c6b69' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -83,7 +83,7 @@ curl --location 'https://api.digifarm.io/manual-delineation' \
 }
 ```
 
-### GET /manual-delineation/{subscription_id}/status
+### GET /delineation-requests/{subscription_id}/status
 
 This endpoint provides manual delineation job status.
 
@@ -94,7 +94,7 @@ This endpoint provides manual delineation job status.
 * `PROCESSED`: Manual delineation process complete.
 * `FAILED`: Manual delineation process fail.
 
-#### Request URL `https://api.digifarm.io/manual-delineation/{subscription_id}/status`
+#### Request URL `https://api.digifarm.io/delineation-requests/{subscription_id}/status`
 
 #### **Request Headers**
 
@@ -110,7 +110,7 @@ X-Client-Token: The client token for authorization
 #### **Example Request**
 
 ```
-curl --location 'https://api.digifarm.io/manual-delineation/831d92ff-bc9b-406d-90c3-9d14b8c67b2c/status' \
+curl --location 'https://api.digifarm.io/delineation-requests/831d92ff-bc9b-406d-90c3-9d14b8c67b2c/status' \
 --header 'X-Client-Token: ae4eb3dc-2479-42c1-b359-b7f0565c6b69'
 ```
 
